@@ -4,26 +4,12 @@
 #
 Name     : R-corrgram
 Version  : 1.13
-Release  : 6
+Release  : 7
 URL      : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Summary  : Plot a Correlogram
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-TSP
-Requires: R-caTools
-Requires: R-colorspace
-Requires: R-dendextend
-Requires: R-fpc
-Requires: R-gclus
-Requires: R-gdata
-Requires: R-ggplot2
-Requires: R-gplots
-Requires: R-gridExtra
-Requires: R-gtools
-Requires: R-registry
-Requires: R-viridis
-Requires: R-whisker
 BuildRequires : R-TSP
 BuildRequires : R-bitops
 BuildRequires : R-caTools
@@ -53,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556469827
+export SOURCE_DATE_EPOCH=1556482132
 
 %install
-export SOURCE_DATE_EPOCH=1556469827
+export SOURCE_DATE_EPOCH=1556482132
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
