@@ -4,7 +4,7 @@
 #
 Name     : R-corrgram
 Version  : 1.13
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Summary  : Plot a Correlogram
@@ -13,6 +13,7 @@ License  : GPL-3.0
 Requires: R-seriation
 BuildRequires : R-seriation
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 graphically. Included panel functions can display points, shading, ellipses, and
@@ -25,10 +26,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562086386
+export SOURCE_DATE_EPOCH=1571813134
 
 %install
-export SOURCE_DATE_EPOCH=1562086386
+export SOURCE_DATE_EPOCH=1571813134
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
