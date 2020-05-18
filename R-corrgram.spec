@@ -4,7 +4,7 @@
 #
 Name     : R-corrgram
 Version  : 1.13
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/corrgram_1.13.tar.gz
 Summary  : Plot a Correlogram
@@ -13,28 +13,28 @@ License  : GPL-3.0
 Requires: R-seriation
 BuildRequires : R-seriation
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 graphically. Included panel functions can display points, shading, ellipses, and
 
 %prep
 %setup -q -c -n corrgram
+cd %{_builddir}/corrgram
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571813134
+export SOURCE_DATE_EPOCH=1589788499
 
 %install
-export SOURCE_DATE_EPOCH=1571813134
+export SOURCE_DATE_EPOCH=1589788499
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
