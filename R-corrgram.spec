@@ -4,7 +4,7 @@
 #
 Name     : R-corrgram
 Version  : 1.14
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/corrgram_1.14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/corrgram_1.14.tar.gz
 Summary  : Plot a Correlogram
